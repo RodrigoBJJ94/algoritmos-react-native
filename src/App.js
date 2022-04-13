@@ -31,16 +31,16 @@ export default function App() {
       </TouchableOpacity>
       {maxFrequent == "" ? <Text></Text> : maxFrequent.length === 1 ?
         <Text style={Styles.texts}>
-          O número mais digitado foi o número: {maxFrequent}</Text> :
+          O número mais sorteado foi o número: {maxFrequent}</Text> :
         <Text style={Styles.texts}>
-          Os números mais digitados foram os números: {maxFrequent}</Text>}
+          Os números mais sorteados foram os números: {maxFrequent}</Text>}
       {maxCount == -Infinity ? <Text></Text> :
         <Text style={Styles.texts}>No total de {maxCount} vezes</Text>}
       {minFrequent == "" ? <Text></Text> : minFrequent.length === 1 ?
         <Text style={Styles.textSpacing}>
-          O número menos digitado foi o número: {minFrequent}</Text> :
+          O número menos sorteado foi o número: {minFrequent}</Text> :
         <Text style={Styles.textSpacing}>
-          Os números menos digitados foram os números: {minFrequent}</Text>}
+          Os números menos sorteados foram os números: {minFrequent}</Text>}
       {minCount == Infinity ? <Text></Text> :
         <Text style={Styles.texts}>No total de {minCount} vezes</Text>}
     </View>
